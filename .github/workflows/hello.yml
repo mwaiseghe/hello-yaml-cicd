@@ -6,9 +6,9 @@ jobs:
   build:
     run-on: ubuntu-latest
     steps:
-    -uses: action/checkout@v1
+    -uses: actions/checkout@v1
     -name: Run a one-line script
-      run: echo hello world!
+     run: echo hello, world!
     -name: Run multiple line script
       run:
         echo Add anotther actions to build,
