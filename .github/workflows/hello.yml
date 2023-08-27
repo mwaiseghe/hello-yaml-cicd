@@ -1,0 +1,15 @@
+name: hello
+
+on: [push]
+
+jobs:
+  build:
+    run-on: ubuntu-latest
+    steps:
+    -uses: action/checkout@v1
+    -name: Run a one-line script
+      run: echo hello world!
+    -name: Run multiple line script
+      run:
+        echo Add anotther actions to build,
+        echo test, and deploy your project
